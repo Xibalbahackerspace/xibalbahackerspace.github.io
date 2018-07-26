@@ -1,0 +1,43 @@
+
+// * Global color pallete
+// * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
+$color-white = #ffffff
+$color-black = #444444
+
+
+// * Font families
+// * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
+$font-family-body = 'Helvetica Neue', Helvetica, Arial, sans-serif
+$font-family-title = $font-family-body
+
+
+
+// * Including Lesli CSS
+// * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
+@require '../vendor/lesli/'
+
+
+// * Base styles
+// * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~ 
+Lesli-base()
+
+
+// * Global dom styles
+// * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~ 
+*
+	color $color-black
+	font-family $font-family-body
+	font-weight 300
+
+
+html
+body
+	color $color-black
+	font-family $font-family-body
+	font-size 16px
+	
+
+
+h2.title
+	font-size 4rem
+	border-bottom 2px solid $color-black
