@@ -36,14 +36,14 @@ gulp.task('stylus', () => {
     let task = gulp
     .src(['./_assetsrc/stylus/*.styl'])
     .pipe(stylus({'include css': true, compress: false}))
-    .pipe(gulp.dest('./_site/css/'))
+    .pipe(gulp.dest('./css/'))
 
     // * Minify css only for production
     if (config.env == 'prod') {
 
         task.pipe(csso())
         .pipe(rename({suffix: '.' + (config.version).replace('.', '') + '.min'}))
-        .pipe(gulp.dest('./_site/css/'))
+        .pipe(gulp.dest('./css/'))
 
     }
 
@@ -66,7 +66,7 @@ gulp.task('scripts', () => {
             .pipe(babel({compact: false, "presets": ["es2015"]}))
             .pipe(uglify())
             .pipe(rename({suffix: '.' + (config.version).replace('.', '') + '.min'}))
-            .pipe(gulp.dest('./_site/js/'))
+            .pipe(gulp.dest('./js/'))
 
         }
 
@@ -80,9 +80,8 @@ gulp.task('scripts', () => {
 gulp.task('server', () => {
 
     browserSync.init({proxy:"http://127.0.0.1",ui:{port:8081},port:8080})
-    gulp.watch('./content/**/*.*').on('change', browserSync.reload)
-    gulp.watch('./content/*.*').on('change', browserSync.reload)
-    gulp.watch('./src/**/*.*').on('change', browserSync.reload)
+    gulp.watch('./_site/**/*.*').on('change', browserSync.reload)
+    gulp.watch('./_site/*.*').on('change', browserSync.reload)
 
 })
 
