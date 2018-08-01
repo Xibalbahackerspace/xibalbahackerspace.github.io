@@ -15,19 +15,6 @@ header
 	Lesli-flex-center('vertical')
 	height 600px
 	text-align center
-	
-	#menu-button
-		position absolute
-		top 1.5rem
-		right 1.5rem
-		
-		span
-		img	
-			vertical-align middle
-			display inline-block
-			
-		img
-			width 50px
 
 	img
 		width 100%
@@ -36,19 +23,33 @@ header
 
 section.about
 	text-align center
-	width 800px
+	width 90%
+	max-width 800px
 	margin 0 auto
 	
 	p
-		margin-top 2rem
 		font-size 2rem
 	
 	img
 		display block
 		margin 0 auto 4rem
+		max-width 300px
+		width 75%
 		
-		&:nth-child(1)
-			width 100px
-			
-		&:nth-child(2)
-			width 200px
+		&.photo
+			border-radius 50%
+			border 4px solid $color-gray
+
+
+section.social
+	padding 1rem 0
+	
+	ul
+		text-align center
+
+		li
+			padding 0 .2rem
+			display inline-block
+
+		img
+			width 50px
