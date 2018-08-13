@@ -3,12 +3,14 @@
 // * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
 $color-white = #ffffff
 $color-black = #444444
+
 $color-gray = #2C2D2C
+$color-gray-light-20 = lighten($color-gray, 20)
 
 
 // * Font families
 // * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
-$font-family-body = 'Helvetica Neue', Helvetica, Arial, sans-serif
+$font-family-body = 'Gotham', 'Helvetica Neue', Helvetica, Arial, sans-serif
 $font-family-title = $font-family-body
 
 
@@ -16,6 +18,15 @@ $font-family-title = $font-family-body
 // * Including Lesli CSS
 // * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
 @require '../vendor/lesli/'
+
+
+// * Fonts
+// * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~ 
+@font-face
+    font-family 'Gotham'
+    font-style normal
+    font-weight 100
+    src url('/assets/fonts/gotham/GothamLight.ttf') format('truetype')
 
 
 // * Base styles
@@ -80,3 +91,18 @@ h2.title
 hr.line
 	border-bottom 2px solid $color-gray
 	margin 6rem auto
+
+
+
+section.social
+	padding 1rem 0
+	
+	ul
+		text-align center
+
+		li
+			padding 0 .2rem
+			display inline-block
+
+		img
+			width 50px

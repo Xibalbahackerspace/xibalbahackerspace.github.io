@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Gotham';
+  font-style: normal;
+  font-weight: 100;
+  src: url("/assets/fonts/gotham/GothamLight.ttf") format('truetype');
+}
 /*
     * Normalize
     * https://necolas.github.io/normalize.css/
@@ -426,13 +432,13 @@ ul li {
 }
 * {
   color: #2c2d2c;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Gotham', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 300;
 }
 html,
 body {
   color: #2c2d2c;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Gotham', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.1;
 }
@@ -475,4 +481,17 @@ h2.title {
 hr.line {
   border-bottom: 2px solid #2c2d2c;
   margin: 6rem auto;
+}
+section.social {
+  padding: 1rem 0;
+}
+section.social ul {
+  text-align: center;
+}
+section.social ul li {
+  padding: 0 0.2rem;
+  display: inline-block;
+}
+section.social ul img {
+  width: 50px;
 }

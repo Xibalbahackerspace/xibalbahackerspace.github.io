@@ -13,9 +13,9 @@ Version 1.0.0-beta
 Install for development
 ------
 * Clone the repo: `git clone .git`.
-* Install Gem dependencies: `Bundle exec install`.
+* Install Gem dependencies: `bundle exec install`.
 * Install dependencies: `npm install`.
-* Start server: `Bundle exec Jekyll serve`.
+* Start server: `bundle exec jekyll serve`.
 
 Requirements  
 ------
