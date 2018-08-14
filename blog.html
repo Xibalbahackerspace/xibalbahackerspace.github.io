@@ -1,0 +1,21 @@
+---
+id: blog
+title: Blog
+layout: page
+permalink: /blog
+---
+
+<header>
+	<h1>Blog</h1>
+	<img alt="Xibalba blog icon" src="{{ site.baseurl }}/assets/img/icons/icon-blog.svg">
+</header>
+
+<section class="posts">
+	
+	{% for post in site.posts %}	
+	<article>
+		<a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
+		<p>{{ post.description }}</p>
+	</article>
+	{% endfor %}
+</section>
