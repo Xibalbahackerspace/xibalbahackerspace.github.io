@@ -15,7 +15,8 @@ Install for development
 * Clone the repo: `git clone .git`.
 * Install Gem dependencies: `bundle exec install`.
 * Install dependencies: `npm install`.
-* Start server: `bundle exec jekyll serve`.
+* Start jekyll server: `bundle exec jekyll serve`.
+* Run Gulp development: `npm run dev`.
 
 Requirements  
 ------

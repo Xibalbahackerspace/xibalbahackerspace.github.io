@@ -1,0 +1,58 @@
+
+// * Template
+// * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
+@require 'Template'
+
+
+// * Loading modules
+// * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
+@require Lesli--load('flex', '../vendor/lesli/src/')
+@require Lesli--load('grid', '../vendor/lesli/src/')
+
+
+// * Page header
+// * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
+header
+	Lesli-flex-center('vertical')
+	height 100vh
+	
+	h1
+		text-transform uppercase
+		line-height .70
+		font-size 3rem
+		text-align right
+		margin-bottom 2rem
+
+	div
+		Lesli-grid(columns: 3, margin: 0px, breakpoint: 100px)
+
+		div
+			height 100px
+			padding 1rem
+
+			img
+				height 100%
+				width 100%
+
+
+
+// * Portfolio
+// * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
+section.portfolio
+
+	article
+		Lesli-grid(columns: 3, margin: 0px, breakpoint: 100px)
+
+		div
+			height 100px
+			vertical-align top
+			border 1px solid $color-gray-light-20
+			background-color darken($color-black, 10)
+			
+			&.icon
+				padding 1rem
+				background-color transparent
+				
+				img
+					height 100%
+					width 100%
