@@ -1,15 +1,24 @@
 title: Xibalba HackerSpace
 email: your-email@example.com
 description: >-
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+    Write an awesome description for your new site here. You can edit this
+    line in _config.yml. It will appear in your document head meta (for
+    Google search results) and in your feed.xml site description.
 baseurl: "" 
 url: "" 
 twitter_username: jekyllrb
 github_username:  jekyll
 
+collections:
+    blog:
+        output: true
+        permalink: /blog/:path
+    events:
+        output: true
+        permalink: /events/:path
+
+
 # Build settings
 markdown: kramdown
 plugins:
-  - jekyll-feed
+    - jekyll-feed

@@ -443,6 +443,7 @@ section.social {
   padding: 1rem 0;
 }
 section.social ul {
+  width: 100%;
   text-align: center;
 }
 section.social ul li {
