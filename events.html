@@ -1,11 +1,21 @@
 ---
-id: products
-title: Productos
+id: events
+title: Eventos
 layout: page
-permalink: /products
+permalink: /events
 ---
 
 <header>
-	<h1>Event<br/>os</h1>
-	<img alt="Xibalba products icon" src="assets/img/icons/icon-products.svg">
+	<h1>Events</h1>
+	<img alt="Xibalba blog icon" src="{{ site.baseurl }}/assets/img/icons/icon-events.svg">
 </header>
+
+<section class="posts">
+	
+	{% for post in site.events %}	
+	<article>
+		<a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
+		<p>{{ post.description }}</p>
+	</article>
+	{% endfor %}
+</section>
