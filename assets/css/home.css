@@ -456,7 +456,7 @@ footer div.contact form {
   display: block;
   margin: 0 auto;
   padding: 0 2rem;
-  max-width: 500px;
+  max-width: 600px;
 }
 footer div.contact input,
 footer div.contact textarea {
@@ -549,6 +549,9 @@ section.services h2 {
   margin-bottom: 5px;
 }
 section.services a {
+  width: 70px;
+  display: block;
+  margin: 0 auto;
   font-weight: bold;
   color: #ffa500;
   border-bottom: 1px solid #ffa500;
