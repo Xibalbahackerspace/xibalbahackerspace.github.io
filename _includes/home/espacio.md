@@ -1,1 +1,1 @@
-Colocar aqui texto descriptivo sobre el espacio
+Si eres una persona que le gusta crear cosas increibles en software y hardware pero no tienes un lugar para poder hacerlo de la mejor manera, nosotros tenemos el mejor espacio para la creacion de sistemas y dispositivos, junto a los mejores asesores. 
